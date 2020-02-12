@@ -1,0 +1,10 @@
+<a href="{%url 'home'%}">Home</a>
+<h1>There are {{count}} words.</h1>
+<h1>Your text:</h1>
+
+{{fulltext}}
+<h1>Word counts:</h1>
+{% for w,c in s %}
+  {{ w }} - {{ c }}
+  <br />
+{% endfor %}
